@@ -26,7 +26,7 @@ const NavBar = () => {
         },
     ]
     return (
-        <div className='flex justify-between items-center  h-20 bg-slate-300 p-2 pb-5'>
+        <div className='flex justify-between items-center  h-20 bg-slate-500 p-2 pb-5'>
             <div>
                 <img className='-mb-20 -ml-10 w-80' src={Logo} alt="" />
                 <h1 className='ml-40 text-5xl font-signature'>mern Devoloper</h1>
@@ -34,7 +34,7 @@ const NavBar = () => {
             <ul className='md:flex hidden'>
             {
                 links.map(({id,link})=>(
-                    <li key={id} className='capitalize px-4 cursor-pointer text-gray-500 font-medium hover:scale-105 duration-200 hover:text-red-400'>
+                    <li key={id} className='-mb-5 capitalize px-4 cursor-pointer text-2xl font-bold hover:scale-105 duration-200 hover:text-gray-100 '>
                         <Link to={link} smooth duration={500}>{link}</Link>
                         </li>
                 ))
